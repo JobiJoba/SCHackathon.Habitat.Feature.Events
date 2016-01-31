@@ -61,11 +61,11 @@ There are built-in view to manage those events:
 
 Event List and Calendar List 
 
-![Alt EventList and Calendar](.\ReadmeImage\EventListAndCalenderView.png)
+![Alt EventList and Calendar](https://raw.githubusercontent.com/JobiJoba/SCHackathon.Habitat.Feature.Events/master/ReadmeImage/EventListAndCalenderView.png)
 
 Event Registration (when not registered) and Event detail 
 
-![Alt Register and Detail](.\ReadmeImage\DetailAndRegister.png)
+![Alt Register and Detail](https://raw.githubusercontent.com/JobiJoba/SCHackathon.Habitat.Feature.Events/master/ReadmeImage/DetailAndRegister.png)
 
 When you register, we will identify the contact with the email and so if he visit another event,
 we will pre-fill the email field which he register before.
@@ -86,7 +86,7 @@ Four rules has been created to help your marketer to play with the events submis
 After the installation of the package, two **root** folder will be created. 
 One in Global, and another under Home; the two are called **Events** but they are different.
 
-![Alt Sitecore Structure](.\ReadmeImage\sitecoreStructure.png)
+![Alt Sitecore Structure](https://raw.githubusercontent.com/JobiJoba/SCHackathon.Habitat.Feature.Events/master/ReadmeImage/sitecoreStructure.png)
 
 One will contains **events** raw data (the one under global) and the other one is just an overview page containing
 a **Wildcard event**. 
