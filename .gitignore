@@ -5,8 +5,12 @@ Habitat/obj/Debug/
 lib/
 packages/
 src/Feature/Events/code/bin/
-src\Feature\Events\code\obj/
-src/Feature/Events/code/obj/Debug/Package/PackageTmp/Content/Events/eventList.css
+src\Feature\Events\code\obj/*
+src/Feature/Events/code/obj/Debug/Package/*
 src\Feature\Events\code\obj\Debug\Package/
-src\Feature\Events\code\obj\Debug/
+src\Feature\Events\code\obj\Debug/*
 *.js
+src/Feature/Events/code/obj/Debug/Package/PackageTmp/App_Config/Include/Feature/
+src\Feature\Events\code\obj\Debug\Package\PackageTmp\Content/
+src\Feature\Events\code\obj\*
+src/Feature/Events/code/obj/Debug/
