@@ -1,0 +1,57 @@
+﻿@using Sitecore.Feature.Events.ViewModels
+@using Sitecore.Foundation.SitecoreExtensions.Repositories
+@model EventViewModel
+
+<div class="news">
+    <h2>
+        @Model.Title
+    </h2>
+
+    <div class="well">
+        <span class="text-muted">
+            @Model.ConcatDateIfNeeded();
+        </span>
+    </div>
+    @Model.Image
+    <div class="body">
+        @Model.Body
+    </div>
+    <br/>
+    <div class="well">
+        <div class="row">
+            <div class="col-md-4">
+                <strong class="event-strong"> @DictionaryRepository.Get("/Events/Event Detail/Details", "Details")</strong>
+
+                <ul class="remove-bullet">
+                    <li>@DictionaryRepository.Get("/Events/Event Detail/Start", "Start") : @Model.StartDate</li>
+                    <li>@DictionaryRepository.Get("/Events/Event Detail/End", "End") : @Model.EndDate</li>
+                    <li>@DictionaryRepository.Get("/Events/Event Detail/Event Category", "Event Category") : @Model.EventTypeName</li>
+                    <li>@DictionaryRepository.Get("/Events/Event Detail/Event Price", "Price") : @Model.Cost @Model.CurrencySymbols</li>
+
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <strong class="event-strong"> @DictionaryRepository.Get("/Events/Event Detail/Venue", "Venue")</strong>
+
+                <ul class="remove-bullet">
+                    <li>@Model.LocationName</li>
+                    <li>@Model.Address</li>
+                    <li>@Model.StateOrProvince  @Model.PostalCode </li>
+                    <li>@Model.City</li>
+                    <li>@Model.Phone</li>
+                    <li>@Model.LocationUrl</li>
+                </ulclass="remove-bullet">
+            </div>
+            <div class="col-md-4">
+                <strong class="event-strong"> @DictionaryRepository.Get("/Events/Event Detail/Organisator", "Organisator")</strong>
+                <ul class="remove-bullet">
+                    <li>@Model.OrganizerName</li>
+                    <li>@Model.OrganizerPhone</li>
+                    <li>@Model.OrganizerEmail</li>
+                    <li>@Model.OrganizerWebsite</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>

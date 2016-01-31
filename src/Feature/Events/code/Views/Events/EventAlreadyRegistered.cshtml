@@ -1,0 +1,14 @@
+﻿@using Sitecore.Feature.Events.Model
+@using Sitecore.Foundation.SitecoreExtensions.Repositories
+@model ListContact
+
+
+    @using (Html.BeginRouteForm(Sitecore.Mvc.Configuration.MvcSettings.SitecoreRouteName, FormMethod.Post))
+    {
+        @Html.Sitecore().FormHandler( "Events", "UnregisterToEvent")
+    <div class="form-group">
+        <input type="hidden" id="sitecoreitemid" name="sitecoreitemid" value="@Model.SitecoreItemId" />
+        <input type="hidden" id="sitecoreitemid" name="listname" value="@Model.ListName" />
+    </div>
+        <button type="submit" class="btn btn-primary">@DictionaryRepository.Get("/Events/Event Registration/Unregister", "Unregister")</button>
+}

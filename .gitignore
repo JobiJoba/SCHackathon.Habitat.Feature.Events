@@ -1,0 +1,12 @@
+.vs/config/applicationhost.config
+Habitat/bin/
+Habitat\obj/
+Habitat/obj/Debug/
+lib/
+packages/
+src/Feature/Events/code/bin/
+src\Feature\Events\code\obj/
+src/Feature/Events/code/obj/Debug/Package/PackageTmp/Content/Events/eventList.css
+src\Feature\Events\code\obj\Debug\Package/
+src\Feature\Events\code\obj\Debug/
+*.js

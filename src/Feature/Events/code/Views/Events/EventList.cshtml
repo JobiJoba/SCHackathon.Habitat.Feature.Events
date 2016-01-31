@@ -1,0 +1,26 @@
+﻿@using Sitecore.Feature.Events.ViewModels
+@using Sitecore.Foundation.SitecoreExtensions.Repositories
+@model IEnumerable<EventViewModel>
+
+
+
+<div class="row event-list">
+    @foreach (EventViewModel item in Model)
+    {
+        <div class="col-sm-4 event">
+            <div class="thumbnail">
+
+                <img class="img-responsive" alt='@item.Event.Image.Alt' src="@item.ImageUrl">
+            </div>
+            <span class="label label-info date">@item.ConcatDateIfNeeded()</span>
+            <p>
+                <strong>@item.Title</strong><br>
+                <em>@item.LocationName</em><br>
+                <span class="small">@item.Summary</span>
+                <a href="@item.Event.EventUrl" class="btn btn-default">
+                    @DictionaryRepository.Get("/events/Event List/read more", "Read more")
+                </a>
+            </p>
+        </div>
+    }
+</div>
